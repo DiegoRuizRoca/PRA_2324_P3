@@ -119,24 +119,10 @@ class BSTree{
 		void remove(T e){
 			root=remove(root,e);
 		}
-		/*void opAdd(BSTree<T>&aT, BSNode<T>*n){
-			if(n!=nullptr){
-				try{
-			 		 aT.root=insert(aT.root,n->elem);
-				}catch(std::runtime_error &e){}
-				opAdd(aT,n->left);
-			  	opAdd(aT,n->right);
-			}
-		}
-		friend BSTree<T> operator+(const BSTree<T>&bt1,const BSTree<T> &bt2){
-			BSTree<T> arbol_completo=BSTree<int>();
-			arbol_completo.opAdd(arbol_completo,bt1.root);
-			arbol_completo.opAdd(arbol_completo,bt2.root);	
-			return arbol_completo;
-		}
+		
 		~BSTree(){
 			delete_cascade(root);
-		}*/
+		}
 
 };
 #endif
